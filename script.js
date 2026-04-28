@@ -2,6 +2,35 @@
    ARES — script.js (v2)
    ═══════════════════════════════════════════════ */
 
+/* ── Background Video Cycler ── */
+(function () {
+  const vid = document.getElementById('bg-vid');
+  if (!vid) return;
+
+  const BG_VIDS = [
+    'vids/arm gif.mp4',
+    'vids/car gif.mov',
+    'vids/WhatsApp Video 2026-04-27 at 7.10.57 AM.mp4',
+  ];
+  let current = 0;
+
+  function loadNext() {
+    vid.classList.add('fade-out');
+    setTimeout(() => {
+      current = (current + 1) % BG_VIDS.length;
+      vid.src = BG_VIDS[current];
+      vid.load();
+      vid.play().catch(() => {});
+      vid.classList.remove('fade-out');
+    }, 1200);
+  }
+
+  vid.src = BG_VIDS[0];
+  vid.load();
+  vid.play().catch(() => {});
+  vid.addEventListener('ended', loadNext);
+})();
+
 /* ── Navbar scroll ── */
 const navbar = document.getElementById('navbar');
 window.addEventListener('scroll', () => {
