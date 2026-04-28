@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ARES — Build Real Robots. Not Just Theory.</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a class="logo" href="#">AR<span>ES</span></a>
+      <ul class="nav-links">
+        <li><a href="#see-it">See It</a></li>
+        <li><a href="#platform">Platform</a></li>
+        <li><a href="#how">How It Works</a></li>
+        <li><a href="#build">Projects</a></li>
+        <li><a href="#schools">For Schools</a></li>
+      </ul>
+      <a href="#cta" class="nav-cta">Book a Demo</a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- 1. HERO -->
+  <section id="hero">
+    <div class="hero-video-wrap">
+      <video id="hero-video" autoplay muted loop playsinline poster="">
+        <!-- <source src="assets/hero.mp4" type="video/mp4"> -->
+      </video>
+      <div class="hero-video-overlay"></div>
+      <div class="hero-gradient-bg"></div>
+    </div>
+    <canvas id="particle-canvas"></canvas>
+    <div class="hero-content">
+      <div class="hero-badge reveal-up">AI &amp; Robotics &nbsp;·&nbsp; For Schools</div>
+      <h1 class="hero-headline">
+        <span id="line1">Build Real Robots.</span>
+        <span id="line2">Not Just Theory.</span>
+      </h1>
+      <p class="hero-sub reveal-up">
+        A complete AI &amp; Robotics system for schools—with labs, curriculum, and real student output.
+      </p>
+      <div class="hero-ctas reveal-up">
+        <a href="#cta" class="btn-primary large">Book a Demo</a>
+        <a href="#see-it" class="btn-ghost large">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+          Watch in Action
+        </a>
+      </div>
+    </div>
+    <div class="scroll-hint"><div class="scroll-line"></div></div>
+  </section>
+
+  <!-- 2. QUICK REALITY -->
+  <section id="reality" class="reality-strip">
+    <div class="container">
+      <p class="reality-line reveal-up">
+        Most schools have labs.&nbsp;&nbsp;<span class="accent">Very few have students building consistently.</span>
+      </p>
+    </div>
+  </section>
+
+  <!-- 3. SEE IT IN ACTION -->
+  <section id="see-it" class="section">
+    <div class="container">
+      <p class="section-label center reveal-up">See It In Action</p>
+      <h2 class="center reveal-up">What ARES looks like<br><span class="accent">inside a classroom</span></h2>
+      <div class="media-grid">
+        <div class="media-card big reveal-up" style="--delay:0s">
+          <div class="media-inner">
+            <div class="media-placeholder video-placeholder">
+              <div class="play-btn-circle">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+              <span class="media-label">Students building robots</span>
+            </div>
+          </div>
+        </div>
+        <div class="media-card reveal-up" style="--delay:.1s">
+          <div class="media-inner">
+            <div class="media-placeholder img-placeholder">
+              <span class="media-icon">🔌</span>
+              <span class="media-label">Close-up of electronics</span>
+            </div>
+          </div>
+        </div>
+        <div class="media-card reveal-up" style="--delay:.2s">
+          <div class="media-inner">
+            <div class="media-placeholder video-placeholder">
+              <div class="play-btn-circle sm">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+              <span class="media-label">Robot in motion</span>
+            </div>
+          </div>
+        </div>
+        <div class="media-card reveal-up" style="--delay:.3s">
+          <div class="media-inner">
+            <div class="media-placeholder img-placeholder">
+              <span class="media-icon">👩‍🏫</span>
+              <span class="media-label">Teacher &amp; students</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="media-note reveal-up">📌 Real classroom footage coming soon — replace placeholders with your media.</p>
+    </div>
+  </section>
+
+  <!-- 4. PLATFORM / APP -->
+  <section id="platform" class="section dark-section">
+    <div class="container">
+      <div class="platform-grid">
+        <div class="platform-text">
+          <p class="section-label reveal-up">The Platform</p>
+          <h2 class="reveal-up">One platform.<br><span class="accent">Complete control.</span></h2>
+          <p class="body-text reveal-up">Students learn, code, and build—all in one system.</p>
+          <ul class="platform-list">
+            <li class="reveal-up" style="--delay:0s">
+              <span class="pl-icon">📊</span>
+              <div><strong>Dashboard</strong><p>Track every student, session, and project in real time.</p></div>
+            </li>
+            <li class="reveal-up" style="--delay:.1s">
+              <span class="pl-icon">💻</span>
+              <div><strong>Coding Interface</strong><p>Block-based and text coding built for beginners and advanced students.</p></div>
+            </li>
+            <li class="reveal-up" style="--delay:.2s">
+              <span class="pl-icon">🎮</span>
+              <div><strong>Simulation</strong><p>Test logic before touching hardware. Coming soon.</p></div>
+            </li>
+          </ul>
+        </div>
+        <div class="platform-mockup reveal-right">
+          <div class="mockup-window">
+            <div class="mockup-bar">
+              <span class="m-dot red"></span>
+              <span class="m-dot yellow"></span>
+              <span class="m-dot green"></span>
+              <span class="m-url">app.areslab.in / dashboard</span>
+            </div>
+            <div class="mockup-body">
+              <div class="mock-sidebar">
+                <div class="mock-nav-item active">📊 Dashboard</div>
+                <div class="mock-nav-item">📚 Curriculum</div>
+                <div class="mock-nav-item">🛠 Projects</div>
+                <div class="mock-nav-item">👥 Students</div>
+                <div class="mock-nav-item">🏆 Compete</div>
+              </div>
+              <div class="mock-main">
+                <div class="mock-header">
+                  <span class="mock-title">Batch 2026 · Week 7</span>
+                  <span class="mock-badge">● Live</span>
+                </div>
+                <div class="mock-stats-row">
+                  <div class="mock-stat"><span class="mock-stat-num accent">42</span><span class="mock-stat-label">Students</span></div>
+                  <div class="mock-stat"><span class="mock-stat-num green">38</span><span class="mock-stat-label">Active today</span></div>
+                  <div class="mock-stat"><span class="mock-stat-num purple">12</span><span class="mock-stat-label">Projects done</span></div>
+                </div>
+                <div class="mock-progress-section">
+                  <div class="mock-progress-label"><span>Obstacle Robot</span><span class="accent">76%</span></div>
+                  <div class="mock-bar-bg"><div class="mock-bar-fill" style="width:76%"></div></div>
+                  <div class="mock-progress-label mt"><span>Smart Automation</span><span class="green">44%</span></div>
+                  <div class="mock-bar-bg"><div class="mock-bar-fill green" style="width:44%"></div></div>
+                </div>
+                <div class="mock-code-block">
+                  <span class="ck">void</span> <span class="cf">moveForward</span>() {<br>
+                  &nbsp;&nbsp;digitalWrite(<span class="cn">IN1</span>, HIGH);<br>
+                  &nbsp;&nbsp;analogWrite(<span class="cn">ENA</span>, <span class="cv">200</span>);<br>
+                  }
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. HOW IT WORKS -->
+  <section id="how" class="section">
+    <div class="container">
+      <p class="section-label center reveal-up">Simple Flow</p>
+      <h2 class="center reveal-up">From first class to<br><span class="accent">real projects</span></h2>
+      <div class="steps-grid">
+        <div class="step-card reveal-up" style="--delay:0s">
+          <div class="step-num">01</div>
+          <div class="step-icon">⚙️</div>
+          <h3>Setup Lab</h3>
+          <p>We configure your space and onboard students—zero friction.</p>
+        </div>
+        <div class="step-connector reveal-up" style="--delay:.08s">→</div>
+        <div class="step-card reveal-up" style="--delay:.15s">
+          <div class="step-num">02</div>
+          <div class="step-icon">📚</div>
+          <h3>Start Sessions</h3>
+          <p>Structured, hands-on curriculum runs week after week.</p>
+        </div>
+        <div class="step-connector reveal-up" style="--delay:.23s">→</div>
+        <div class="step-card reveal-up" style="--delay:.3s">
+          <div class="step-num">03</div>
+          <div class="step-icon">🛠️</div>
+          <h3>Build Projects</h3>
+          <p>Real components. Real circuits. Real systems—every week.</p>
+        </div>
+        <div class="step-connector reveal-up" style="--delay:.38s">→</div>
+        <div class="step-card reveal-up" style="--delay:.45s">
+          <div class="step-num">04</div>
+          <div class="step-icon">🏆</div>
+          <h3>Showcase Results</h3>
+          <p>Demos, competitions, and visible outcomes for the school.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. WHAT STUDENTS BUILD -->
+  <section id="build" class="section dark-section">
+    <div class="container">
+      <p class="section-label center reveal-up">Student Projects</p>
+      <h2 class="center reveal-up">Not theory.<br><span class="accent">Real systems.</span></h2>
+      <p class="body-text center reveal-up" style="max-width:480px;margin:0 auto 56px;">This is what students actually build inside ARES classrooms.</p>
+      <div class="build-grid">
+        <div class="build-card reveal-up" style="--delay:0s">
+          <div class="build-img-wrap"><div class="build-img-placeholder">🤖</div></div>
+          <div class="build-info">
+            <h3>Obstacle-Avoiding Robot</h3>
+            <p>Autonomous bots using ultrasonic sensors.</p>
+            <span class="proj-tag">Robotics</span>
+          </div>
+        </div>
+        <div class="build-card reveal-up" style="--delay:.1s">
+          <div class="build-img-wrap"><div class="build-img-placeholder">⚡</div></div>
+          <div class="build-info">
+            <h3>Smart Automation System</h3>
+            <p>IoT-connected devices built and programmed by students.</p>
+            <span class="proj-tag">IoT</span>
+          </div>
+        </div>
+        <div class="build-card reveal-up" style="--delay:.2s">
+          <div class="build-img-wrap"><div class="build-img-placeholder">🦾</div></div>
+          <div class="build-info">
+            <h3>Robotic Arm</h3>
+            <p>Servo-driven arms with precision movement control.</p>
+            <span class="proj-tag">Mechanics</span>
+          </div>
+        </div>
+        <div class="build-card reveal-up" style="--delay:.3s">
+          <div class="build-img-wrap"><div class="build-img-placeholder">🧠</div></div>
+          <div class="build-info">
+            <h3>Automation Projects</h3>
+            <p>Sensor-based systems and basic AI logic in hardware.</p>
+            <span class="proj-tag">AI / ML</span>
+          </div>
+        </div>
+      </div>
+      <p class="media-note center reveal-up" style="margin-top:40px">📌 Replace placeholders with real project photos for maximum impact.</p>
+    </div>
+  </section>
+
+  <!-- 7. FOR SCHOOLS -->
+  <section id="schools" class="section">
+    <div class="container">
+      <div class="schools-split">
+        <div class="schools-left">
+          <p class="section-label reveal-up">For Decision Makers</p>
+          <h2 class="reveal-up">Why schools<br><span class="accent">choose ARES</span></h2>
+          <a href="#cta" class="btn-primary reveal-up" style="--delay:.4s;margin-top:36px;display:inline-block">Book a Demo →</a>
+        </div>
+        <div class="schools-right">
+          <div class="school-reason reveal-up" style="--delay:0s">
+            <div class="reason-num">01</div>
+            <div><h4>Makes labs actually work</h4><p>Your existing infrastructure finally delivers results.</p></div>
+          </div>
+          <div class="school-reason reveal-up" style="--delay:.1s">
+            <div class="reason-num">02</div>
+            <div><h4>Improves student engagement</h4><p>When students build, curiosity becomes self-sustaining.</p></div>
+          </div>
+          <div class="school-reason reveal-up" style="--delay:.2s">
+            <div class="reason-num">03</div>
+            <div><h4>Adds a strong tech program</h4><p>Differentiate your school with a visible STEM identity.</p></div>
+          </div>
+          <div class="school-reason reveal-up" style="--delay:.3s">
+            <div class="reason-num">04</div>
+            <div><h4>Helps admissions &amp; branding</h4><p>Real projects create real content. Parents notice.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. FINAL CTA -->
+  <section id="cta" class="section cta-section">
+    <div class="cta-glow"></div>
+    <div class="container center">
+      <p class="section-label center reveal-up">Get Started</p>
+      <h2 class="reveal-up" style="font-size:clamp(2.4rem,6vw,4.2rem);line-height:1.1">
+        Bring ARES to<br><span class="accent">your school</span>
+      </h2>
+      <p class="body-text center reveal-up" style="max-width:440px;margin:16px auto 40px;">
+        Join schools already running real robotics programs with measurable outcomes.
+      </p>
+      <div class="cta-btns reveal-up">
+        <a href="mailto:hello@areslab.in" class="btn-primary large">Book a Demo</a>
+        <a href="mailto:hello@areslab.in" class="btn-ghost large">Contact Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <a class="logo" href="#">AR<span>ES</span></a>
+      <p class="footer-tagline">Build Real Robots. Not Just Theory.</p>
+      <p class="footer-copy">© 2026 ARES. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
